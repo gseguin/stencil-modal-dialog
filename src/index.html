@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <title>Modal Dialog Component Test</title>
+    <!--
+      The compiled JavaScript bundles are loaded from the `build` directory at runtime.
+      When running `stencil build` or `npm start` these files will be
+      generated automatically.  The `nomodule` script provides a fallback for
+      older browsers.
+    -->
+    <script type="module" src="/build/modal-dialog.esm.js"></script>
+    <script nomodule src="/build/modal-dialog.js"></script>
+  </head>
+  <body>
+    <!--
+      Instantiate the modal-dialog component.  The `openModal()` and
+      `close()` methods may be invoked from the test or via the
+      Open Dialog button below.  Content supplied via the default slot
+      will appear inside the dialog.
+    -->
+    <modal-dialog id="testDialog">
+      <p>This is some content inside the modal dialog.</p>
+    </modal-dialog>
+
+    <button id="openBtn" onclick="document.getElementById('testDialog').openModal()">
+      Open Dialog
+    </button>
+  </body>
+</html>
