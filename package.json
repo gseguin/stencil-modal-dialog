@@ -1,0 +1,21 @@
+{
+  "name": "stencil-modal-dialog",
+  "version": "0.0.1",
+  "description": "A Stencil component for modal dialog with polyfill fallback and WebdriverIO tests.",
+  "scripts": {
+    "build": "stencil build",
+    "start": "stencil build --dev --watch --serve",
+    "test:wdio": "wdio run wdio.conf.js"
+  },
+  "dependencies": {
+    "@stencil/core": "^4.36.2",
+    "dialog-polyfill": "^0.5.6"
+  },
+  "devDependencies": {
+    "@wdio/cli": "^8.30.0",
+    "@wdio/local-runner": "^8.30.0",
+    "@wdio/mocha-framework": "^8.30.0",
+    "@wdio/sync": "^8.30.0",
+    "@wdio/browserstack-service": "^8.30.0"
+  }
+}
